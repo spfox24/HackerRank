@@ -15,9 +15,6 @@ function greeting(parameterVariable) {
     console.log(parameterVariable);
 };
 
-greeting();
-
-
 /**
 *   The variables 'firstInteger', 'firstDecimal', and 'firstString' are declared for you -- do not modify them.
 *   Print three lines:
@@ -55,9 +52,6 @@ function performOperation(secondInteger, secondDecimal, secondString) {
     console.log(firstString + secondString);
 }
 
-performOperation();
-
-
 /**
 *   Calculate the area of a rectangle.
 *
@@ -92,9 +86,6 @@ function getPerimeter(length, width) {
     return perimeter;
 }
 
-getArea();
-getPerimeter();
-
 /*
  * Complete the vowelsAndConsonants function.
  * Print your output using 'console.log()'.
@@ -116,9 +107,6 @@ function vowelsAndConsonants(s) {
     console.log(consonants.trim());
 }
 
-vowelsAndConsonants();
-
-
 const n = 4;
 
 function factorial(n) {
@@ -128,9 +116,6 @@ function factorial(n) {
         return n * factorial(n - 1);
     }
 };
-
-factorial();
-
 
 function main() {
     // Write your code here. Read input using 'readLine()' and print output using 'console.log()'.
@@ -145,3 +130,23 @@ function main() {
     // Print the perimeter of the circle:
     console.log(perimeter);
 };
+
+function getGrade(score) {
+    let grade;
+    // Write your code here
+    if (score > 25 && score <= 30) {
+        grade = 'A';
+    } else if (score > 20 && score <= 25) {
+        grade = 'B';
+    } else if (score > 15 && score <= 20) {
+        grade = 'C';
+    } else if (score > 10 && score <= 5) {
+        grade = 'D';
+    } else if (score > 5 && score <= 10) {
+        grade = 'E';
+    } else {
+        grade = 'F';
+    }
+
+    return grade;
+}
