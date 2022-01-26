@@ -231,3 +231,409 @@ function Rectangle(a, b) {
     this.perimeter = 2 * (a + b);
     this.area = a * b;
 }
+
+
+
+
+
+/* CODE WITH MOSH */
+
+/*
+  If/else
+*/
+
+// let hour = 6;
+
+// if(hour >= 6 && hour < 12) {
+//     console.log('Good Morning!');
+// } else if(hour >= 12 && hour < 18) {
+//     console.log('Good Afternoon!');
+// } else {
+//     console.log('Good Evening!');
+// };
+
+// Switch/case
+
+// let role = 'guest';
+
+// if(role === 'guest') {
+//   console.log('Guest User');
+// } else if(role === 'moderator') {
+//   console.log('Moderator User')
+// } else {
+//   console.log('Unknown User');
+// }
+
+// switch(role) {
+//   case 'guest':
+//     console.log('Guest User');
+//     break;
+  
+//   case 'moderator':
+//     console.log('Moderator User');
+//     break;
+  
+//   default:
+//     console.log('Unknown User');
+// }
+
+//*** FOR LOOP ***
+/*
+    for(initialExpression; condition; incrementExpression) {
+      statement
+    }
+*/
+// for(let i = 1; i <= 5; i++) {
+//   if(i % 2 !== 0) console.log(i);
+// }
+
+//*** WHILE LOOP ***
+/*
+  while(condition) {
+    statement
+    incrementExpression
+  }
+*/
+// let i = 0;
+
+// while(i <= 5) {
+//   if(i % 2 !== 0) console.log(i);
+//   i++;
+// };
+
+//*** DO-WHILE LOOP ***
+
+// let i = 9;
+
+// do {
+//   if(i % 2 !== 0) console.log(i);
+//   i++;
+// } while(i <= 5);
+
+//*** FOR-IN LOOP ***
+
+// Dot Notation
+// person.name
+
+// Bracket Notation
+// person['name']
+
+// const person = {
+//   name: 'Steven',
+//   age: 34
+// };
+
+// for(let key in person) {
+//   console.log(key, person[key]);
+// };
+
+// const colors = ['red', 'green', 'blue'];
+
+// for(let index in colors) {
+//   console.log(index, colors[index]);
+// };
+
+//*** FOR-OF LOOP ***
+
+// const colors = ['red', 'green', 'blue'];
+
+// for(let color of colors) {
+//   console.log(color);
+// };
+
+// let i = 0;
+
+// while(i <= 10) {
+//   // if(i === 5) break;
+//   if(i % 2 === 0) {
+//     i++;
+//     // continue;
+//   };
+//   console.log(i);
+//   i++;
+// };
+
+
+//*** EXERCISE 1 - MAX OF TWO NUMBERS ***
+
+// let number = maxNum(7, 6);
+// console.log(number);
+
+// function maxNum(a, b) {
+//   if(a > b) {
+//     return a;
+//   } else {
+//     return b;
+//   };
+// };
+
+// function maxNum(a, b) {
+//   return (a > b) ? a : b;
+// };
+
+//*** EXERCISE 2 - LANDSCAPE OR PORTRAIT ***
+
+// console.log(isLandscape(6, 3));
+
+// function isLandscape(width, height) {
+//   // return true if width > height : return false
+//   if(width > height) {
+//     return true;
+//   } else {
+//     return false;
+//   };
+// };
+
+// function isLandscape(width, height) {
+//   return (width > height);
+// };
+
+//*** EXERCISE 3 - FIZZBUZZ ***
+
+// Divisible by 3 => Fizz
+// Divisible by 5 => Buzz
+// Divisible by both 3 & 5 => FizzBuzz
+// Not divisible by 3 or 5 => input
+// Not a number => 'Not a number'
+
+// const output = fizzBuzz('4');
+// console.log(output);
+
+// function fizzBuzz(input) {
+//   if(typeof input !== 'number') {
+//     return NaN;
+//   };
+
+//   if ((input % 3 === 0) && (input % 5 === 0)) {
+//     return 'FizzBuzz';
+//   };
+
+//   if (input % 3 === 0) {
+//     return 'Fizz';
+//   };
+
+//   if (input % 5 === 0) {
+//     return 'Buzz';
+//   };
+
+//   return input;
+// };
+
+//*** EXERCISE 4 - DEMERIT POINTS ***
+
+// Speed Limit = 70
+// 5 -> 1 point
+// Math.floor()
+// greater than 12 points -> suspended
+
+// checkSpeed(70);
+
+// function checkSpeed(speed) {
+//   const speedLimit = 70;
+//   const kmPerPoint = 5;
+
+//   if (speed < speedLimit + kmPerPoint) {
+//     console.log('Ok');
+//     return;
+//   };
+
+//   const points = Math.floor((speed - speedLimit) / kmPerPoint);
+
+//   if (points >= 12) {
+//       console.log('License Suspended');
+//     } else {
+//       console.log('Points:', points);
+//   };
+// };
+
+//*** EXERCISE 5 - EVEN AND ODD NUMBERS ***
+
+// showNumbers(10);
+
+// function showNumbers(limit) {
+//   for(let i = 0; i <= limit; i++) {
+//     if(i % 2 === 0) {
+//       console.log('EVEN');
+//     } else {
+//       console.log('ODD');
+//     };
+//   };
+// };
+
+// function showNumbers(limit) {
+//   for(let i = 0; i <= limit; i++) {
+//     const message = (i % 2 === 0) ? 'EVEN' : 'ODD';
+//     console.log(i, message);
+//   };
+// };
+
+//*** EXERCISE 6 - COUNT TRUTHY ***
+
+// const isActive = true;
+// const name = 'Steven'; // Truthy (true)
+// const name = ''; // Falsy (false)
+// Falsy:
+// undefined; null; ''; 0; NaN;
+
+// if(isActive) console.log('Hello');
+
+// const array = [0, null, undefined, '', 2, 3];
+// console.log(countTruthy(array));
+
+// function countTruthy(array) {
+//   let count = 0;
+
+//   for(let value of array) {
+//     if(value) {
+//       count++;
+//     };
+//   };
+//   return count;
+// };
+
+//*** EXERCISE 7 - STRING PROPERTIES ***
+
+// for(let key in movie) {
+//   console.log(key, movie[key]);
+// };
+
+// const movie = {
+//   title: 'King Kong',
+//   releaseYear: 1947,
+//   rating: 4.7,
+//   director: 'Godzilla'
+// };
+
+// showProperties(movie);
+
+// function showProperties(obj) {
+//   for(let key in obj) {
+//     if(typeof obj[key] === 'string') {
+//       console.log((key + ':'), obj[key]);
+//     };
+//   };
+// };
+
+//*** EXERCISE 8 - SUM OF MULTIPLES OF 3 & 5 ***
+
+// console.log(sum(10));
+// // Multiples of 3: 3, 6, 9;
+// // Multiples of 5: 5, 10;
+
+// function sum(limit) {
+//   let sum = 0;
+
+//   for(let i = 0; i <= limit; i++) {
+//     if(i % 3 === 0 || i % 5 === 0) {
+//       sum += i;
+//     };
+//   };
+//   return sum;
+// };
+
+//*** EXERCISE 9 - GRADE ***
+
+// 1-59: F
+// 60-69: D
+// 70-79: C
+// 80-89: B
+// 90-100: A
+
+// const marks = [80, 80, 50];
+// // Average = 70
+// console.log(calculateGrade(marks));
+
+// function calculateGrade(marks) {
+//   let sum = 0;
+
+//   for(let mark of marks) {
+//     sum += mark;
+//   let average = sum / marks.length;
+
+//   if (average < 60) return 'F';
+//   if (average < 70) return 'D';
+//   if (average < 80) return 'C';
+//   if (average < 90) return 'B';
+//   return 'A';
+// };
+
+// Single Responsibility Principle Version
+
+// const marks = [100, 100, 50];
+// console.log(calculateGrade(marks));
+
+// function calculateGrade(marks) {
+//   const average = calculateAverage(marks);
+
+//   if (average < 60) return 'F';
+//   if (average < 70) return 'D';
+//   if (average < 80) return 'C';
+//   if (average < 90) return 'B';
+//   return 'A';
+// };
+
+// function calculateAverage(array) {
+//   let sum = 0;
+//   for(let value of array) {
+//     sum += value;
+//   };
+//   return sum / array.length;
+// };
+
+//*** EXERCISE 10 - STARS ***
+
+// showStars(1);
+
+// function showStars(rows) {
+//   for (let row = 1; row <= rows; row++) {
+//     let pattern = '';
+//     for(let i = 0; i < row; i++) {
+//       pattern += '*';
+//     };
+//     console.log(pattern);
+//   };
+// };
+
+//*** EXERCISE 11 - PRIME NUMBERS ***
+
+// PRIME (whose factors are only 1 and itself)
+
+// showPrimes(20);
+
+// function showPrimes(limit) {
+//   for(let num = 2; num <= limit; num++) {
+//     // 2 - current num (i)
+//     let isPrime = true;
+
+//     for(let factor = 2; factor < num; factor++) {
+//       if(num % factor === 0) {
+//         isPrime = false;
+//         break;
+//       };
+//     };
+//     if(isPrime) {
+//       console.log(num)
+//     };
+//   };
+// };
+
+// Single Responsibility Principle Version
+
+// showPrimes(20);
+
+// function showPrimes(limit) {
+//   for(let num = 2; num <= limit; num++) {
+//     if(isPrime(num)) {
+//       console.log(num);
+//     };
+//   };
+// };
+
+// function isPrime(num) {
+//     for(let factor = 2; factor < num; factor++) {
+//       if(num % factor === 0) {
+//         return false;
+//       };
+//     };
+//     return true;
+// };
