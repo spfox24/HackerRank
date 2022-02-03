@@ -248,7 +248,49 @@ function getCount(objects) {
 
 
 
+
+
 /* CODE WITH MOSH */
+
+// **Variables**
+// ex. let name = 'Steven';
+
+// Cannot be a reserved keyword
+// Should be meaningful
+// Cannot start with number
+// Cannot contain a space or hyphen (Camel Case)
+// Are case sensitive
+
+// **Primitive/Value Type**
+// String: let name = 'Steven'; <--String Literal
+// Number: let age = 34; <--Number Literal
+// Boolean: let isApproved = true(false); <--Boolean Literal
+// Undefined: let firstName;
+// Null: let selectedColor = null; (Set to clear value of variable)
+
+// **Objects**
+/*
+// Object Literal
+let person = {
+    name: 'Steven',
+    age: 34
+};
+// Dot Notation
+// person.name = 'Fox';
+
+// Bracket Notation
+person['name'] = 'Perry';
+
+console.log(person);
+console.log(person.name);
+*/
+
+// **Arrays**
+// let selectedColors = ['red', 'blue'];
+// selectedColors[2] = 'green';
+// console.log(selectedColors[0]);
+// console.log(selectedColors.length);
+
 
 /*
   If/else
