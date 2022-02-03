@@ -291,10 +291,164 @@ console.log(person.name);
 // console.log(selectedColors[0]);
 // console.log(selectedColors.length);
 
+// **Functions**
+
 
 /*
-  If/else
+function greet(parameter) {
+    statement;
+}
+greet(argument);
+
+// Performing a task
+function greet(name, lastName) {
+    console.log('Hello' + name + ' ' + lastName);
+}
+
+greet('Steven', 'Perry');
+greet('Fox');
+
+// Calculating a value
+function square(number) {
+    return number * number;
+}
+
+console.log(square(2));
 */
+
+// **Operators**
+/*
+Arithmetic Operators:
+let x = 10;
+let y = 3;
+
+console.log(x + y); - Addition
+console.log(x - y); - Subtraction
+console.log(x * y); - Multiplication
+console.log(x / y); - Division
+console.log(x % y); - Remainder of Division
+console.log(x ** y); - x to the Power of y
+console.log(x++); - Increment(++)
+console.log(--x); - Decrement(--)
+/*
+
+/*
+Assignment Operators:
+let x = 10;
+
+x = x + 5;
+x += 5;
+
+x = x * 3;
+x *= 3;
+*/
+
+/*
+Comparison Operators:
+let x = 1;
+
+// Relational
+console.log(x > 0);
+console.log(x >= 1);
+console.log(x < 1);
+console.log(x <= 1);
+
+// Equality
+console.log(x === 1);
+console.log(x !== 1);
+*/
+
+/*
+Equality Operators:
+// Strict Equality
+console.log(1 === 1); - True
+console.log(1 === '1'); - False
+
+// Loose Equality
+console.log(1 == 1); - True
+console.log(1 == '1'); - True
+console.log(true == 1); - True
+*/
+
+/*
+Ternary Operator:
+If a customer has more than 100 points,
+they are a 'gold' customer, otherwise,
+they are a 'silver' customer.
+
+let points = 110;
+let type = points > 100 ? 'gold' : 'silver';
+console.log(type); - gold
+*/
+
+/*
+Logical Operators:
+// Logical AND (&&)
+// Returns TRUE if both operands are TRUE
+console.log(true && true);-->TRUE
+console.log(false && true);-->FALSE
+
+let highIncome = true;
+let goodCreditScore = true;
+let eligibleForLoan = highIncome && goodCreditScore;
+console.log(eligibleForLoan)--> TRUE
+
+// Logical OR (||)
+// Returns TRUE if one of the operands is TRUE
+let highIncome = false;
+let goodCreditScore = true;
+let eligibleForLoan = highIncome || goodCreditScore;
+console.log(eligibleForLoan) --> TRUE
+
+// NOT (!)
+// Returns TRUE if one of the operands is TRUE
+let highIncome = false;
+let goodCreditScore = false;
+let applicationRefused = !eligibleForLoan;
+console.log('Eligible', eligibleForLoan)--> FALSE
+console.log('Application Refused', applicationRefused)--> TRUE
+*/
+
+/*
+Logical Operators with Non-booleans:
+// Falsy (false):
+undefined
+null
+0
+false
+''
+NaN
+
+let userColor = 'red';
+let defaultColor = 'blue';
+let currentColor = userColor || defaultColor;
+
+console.log(currentColor);--> red
+*/
+
+
+/*
+Operators Precedence:
+let x = 2 + 3 * 4;
+console.log(x);--> 14
+let x = (2 + 3) * 4;
+console.log(x);--> 20
+*/
+
+/*
+let a = 'red';
+let b = 'blue';
+let c = a;
+a = b;
+b = c;
+
+
+console.log(a);
+console.log(b);
+*/
+
+
+// If/else
 
 // let hour = 6;
 
