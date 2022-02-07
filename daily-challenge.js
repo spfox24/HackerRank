@@ -193,6 +193,8 @@ function getSecondLargest(nums) {
     return secondLargest;
 }
 
+
+
 /*
  * Complete the reverseString function
  * Use console.log() to print to stdout.
@@ -246,7 +248,27 @@ function getCount(objects) {
     return n;
 };
 
+/*
+ * Complete the 'pageCount' function below.
+ *
+ * The function is expected to return an INTEGER.
+ * The function accepts following parameters:
+ *  1. INTEGER n
+ *  2. INTEGER p
+ */
 
+function pageCount(n, p) {
+    /*
+        n: number of pages in book
+        p: page number to turn to
+    */
+   let pageTurns =  Math.floor(p / 2);
+   let totalTurns = Math.floor(n / 2);
+
+   // Return the total number of page turns it takes to get to a page, or how many it requires if starting in back
+   return Math.min(pageTurns, totalTurns - pageTurns);
+
+}
 
 
 
