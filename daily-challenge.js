@@ -1,326 +1,326 @@
-/**
-*   A line of code that prints "Hello, World!" on a new line is provided in the editor. 
-*   Write a second line of code that prints the contents of 'parameterVariable' on a new line.
-*
-*	Parameter:
-*   parameterVariable - A string of text.
-**/
+// /**
+// *   A line of code that prints "Hello, World!" on a new line is provided in the editor. 
+// *   Write a second line of code that prints the contents of 'parameterVariable' on a new line.
+// *
+// *	Parameter:
+// *   parameterVariable - A string of text.
+// **/
 
-const parameterVariable = 'Welcome to 10 Days of JavaScript!'
+// const parameterVariable = 'Welcome to 10 Days of JavaScript!'
 
-function greeting(parameterVariable) {
-    // This line prints 'Hello, World!' to the console:
-    console.log('Hello, World!');
-    // Write a line of code that prints parameterVariable to stdout using console.log:
-    console.log(parameterVariable);
-};
+// function greeting(parameterVariable) {
+//     // This line prints 'Hello, World!' to the console:
+//     console.log('Hello, World!');
+//     // Write a line of code that prints parameterVariable to stdout using console.log:
+//     console.log(parameterVariable);
+// };
 
-/**
-*   The variables 'firstInteger', 'firstDecimal', and 'firstString' are declared for you -- do not modify them.
-*   Print three lines:
-*   1. The sum of 'firstInteger' and the Number representation of 'secondInteger'.
-*   2. The sum of 'firstDecimal' and the Number representation of 'secondDecimal'.
-*   3. The concatenation of 'firstString' and 'secondString' ('firstString' must be first).
-*
-*	Parameter(s):
-*   secondInteger - The string representation of an integer.
-*   secondDecimal - The string representation of a floating-point number.
-*   secondString - A string consisting of one or more space-separated words.
-**/
+// /**
+// *   The variables 'firstInteger', 'firstDecimal', and 'firstString' are declared for you -- do not modify them.
+// *   Print three lines:
+// *   1. The sum of 'firstInteger' and the Number representation of 'secondInteger'.
+// *   2. The sum of 'firstDecimal' and the Number representation of 'secondDecimal'.
+// *   3. The concatenation of 'firstString' and 'secondString' ('firstString' must be first).
+// *
+// *	Parameter(s):
+// *   secondInteger - The string representation of an integer.
+// *   secondDecimal - The string representation of a floating-point number.
+// *   secondString - A string consisting of one or more space-separated words.
+// **/
 
-const secondInteger = parseInt(12);
-const secondDecimal = parseFloat(4.32);
-const secondString = 'is the best place to learn and practice coding!';
+// const secondInteger = parseInt(12);
+// const secondDecimal = parseFloat(4.32);
+// const secondString = 'is the best place to learn and practice coding!';
 
-function performOperation(secondInteger, secondDecimal, secondString) {
-    // Declare a variable named 'firstInteger' and initialize with integer value 4.
-    const firstInteger = 4;
+// function performOperation(secondInteger, secondDecimal, secondString) {
+//     // Declare a variable named 'firstInteger' and initialize with integer value 4.
+//     const firstInteger = 4;
     
-    // Declare a variable named 'firstDecimal' and initialize with floating-point value 4.0.
-    const firstDecimal = 4.0;
+//     // Declare a variable named 'firstDecimal' and initialize with floating-point value 4.0.
+//     const firstDecimal = 4.0;
     
-    // Declare a variable named 'firstString' and initialize with the string "HackerRank".
-    const firstString = 'HackerRank ';
+//     // Declare a variable named 'firstString' and initialize with the string "HackerRank".
+//     const firstString = 'HackerRank ';
     
-    // Write code that uses console.log to print the sum of the 'firstInteger' and 'secondInteger' (converted to a Number        type) on a new line.
-    console.log(firstInteger + parseInt(secondInteger));
+//     // Write code that uses console.log to print the sum of the 'firstInteger' and 'secondInteger' (converted to a Number        type) on a new line.
+//     console.log(firstInteger + parseInt(secondInteger));
     
-    // Write code that uses console.log to print the sum of 'firstDecimal' and 'secondDecimal' (converted to a Number            type) on a new line.
-    console.log(firstDecimal + parseFloat(secondDecimal));
+//     // Write code that uses console.log to print the sum of 'firstDecimal' and 'secondDecimal' (converted to a Number            type) on a new line.
+//     console.log(firstDecimal + parseFloat(secondDecimal));
     
-    // Write code that uses console.log to print the concatenation of 'firstString' and 'secondString' on a new line. The        variable 'firstString' must be printed first.
-    console.log(firstString + secondString);
-}
+//     // Write code that uses console.log to print the concatenation of 'firstString' and 'secondString' on a new line. The        variable 'firstString' must be printed first.
+//     console.log(firstString + secondString);
+// }
 
-/**
-*   Calculate the area of a rectangle.
-*
-*   length: The length of the rectangle.
-*   width: The width of the rectangle.
-*   
-*	Return a number denoting the rectangle's area.
-**/
+// /**
+// *   Calculate the area of a rectangle.
+// *
+// *   length: The length of the rectangle.
+// *   width: The width of the rectangle.
+// *   
+// *	Return a number denoting the rectangle's area.
+// **/
 
-const length = 3;
-const width = 4.5;
+// const length = 3;
+// const width = 4.5;
 
-function getArea(length, width) {
-    let area;
-    // Write your code here
-    area = (length*width);
-    return area;
-}
+// function getArea(length, width) {
+//     let area;
+//     // Write your code here
+//     area = (length*width);
+//     return area;
+// }
 
-/**
-*   Calculate the perimeter of a rectangle.
-*	
-*	length: The length of the rectangle.
-*   width: The width of the rectangle.
-*   
-*	Return a number denoting the perimeter of a rectangle.
-**/
-function getPerimeter(length, width) {
-    let perimeter;
-    // Write your code here
-    perimeter = (length+width)*2;
-    return perimeter;
-}
+// /**
+// *   Calculate the perimeter of a rectangle.
+// *	
+// *	length: The length of the rectangle.
+// *   width: The width of the rectangle.
+// *   
+// *	Return a number denoting the perimeter of a rectangle.
+// **/
+// function getPerimeter(length, width) {
+//     let perimeter;
+//     // Write your code here
+//     perimeter = (length+width)*2;
+//     return perimeter;
+// }
 
-/*
- * Complete the vowelsAndConsonants function.
- * Print your output using 'console.log()'.
- */
+// /*
+//  * Complete the vowelsAndConsonants function.
+//  * Print your output using 'console.log()'.
+//  */
 
-const s = 'javascriptloops';
+// const s = 'javascriptloops';
 
-function vowelsAndConsonants(s) {
-    const vowels = 'aeiou';
-    let consonants = '';
+// function vowelsAndConsonants(s) {
+//     const vowels = 'aeiou';
+//     let consonants = '';
 
-    for(let i = 0; i < s.length; i++) {
-        if (vowels.includes(s[i])) {
-            console.log(s[i]);
-        } else {
-            consonants += s[i] + '\n';
-        }
-    }
-    console.log(consonants.trim());
-}
+//     for(let i = 0; i < s.length; i++) {
+//         if (vowels.includes(s[i])) {
+//             console.log(s[i]);
+//         } else {
+//             consonants += s[i] + '\n';
+//         }
+//     }
+//     console.log(consonants.trim());
+// }
 
-const n = 4;
+// const n = 4;
 
-function factorial(n) {
-    if(n === 0) {
-        return 1;
-    } else {
-        return n * factorial(n - 1);
-    }
-};
+// function factorial(n) {
+//     if(n === 0) {
+//         return 1;
+//     } else {
+//         return n * factorial(n - 1);
+//     }
+// };
 
-function main() {
-    // Write your code here. Read input using 'readLine()' and print output using 'console.log()'.
-    let r = 2.6;
+// function main() {
+//     // Write your code here. Read input using 'readLine()' and print output using 'console.log()'.
+//     let r = 2.6;
 
-    const PI = Math.PI;
-    const area = (PI * Math.pow(r, 2));
-    const perimeter = (2 * PI * r);
+//     const PI = Math.PI;
+//     const area = (PI * Math.pow(r, 2));
+//     const perimeter = (2 * PI * r);
 
-    // Print the area of the circle:
-    console.log(area);
-    // Print the perimeter of the circle:
-    console.log(perimeter);
-};
+//     // Print the area of the circle:
+//     console.log(area);
+//     // Print the perimeter of the circle:
+//     console.log(perimeter);
+// };
 
-function getGrade(score) {
-    let grade;
-    // Write your code here
-    if (score > 25 && score <= 30) {
-        grade = 'A';
-    } else if (score > 20 && score <= 25) {
-        grade = 'B';
-    } else if (score > 15 && score <= 20) {
-        grade = 'C';
-    } else if (score > 10 && score <= 5) {
-        grade = 'D';
-    } else if (score > 5 && score <= 10) {
-        grade = 'E';
-    } else {
-        grade = 'F';
-    }
+// function getGrade(score) {
+//     let grade;
+//     // Write your code here
+//     if (score > 25 && score <= 30) {
+//         grade = 'A';
+//     } else if (score > 20 && score <= 25) {
+//         grade = 'B';
+//     } else if (score > 15 && score <= 20) {
+//         grade = 'C';
+//     } else if (score > 10 && score <= 5) {
+//         grade = 'D';
+//     } else if (score > 5 && score <= 10) {
+//         grade = 'E';
+//     } else {
+//         grade = 'F';
+//     }
 
-    return grade;
-}
+//     return grade;
+// }
 
-function getLetter(s) {
-    let letter;
-    // Write your code here
-    switch(true) {
-        case 'aeiou'.includes(s[0]):
-            letter = 'A';
-            break;
-        case 'bcdfg'.includes(s[0]):
-            letter = 'B';
-            break;
-        case 'hjklm'.includes(s[0]):
-            letter = 'C';
-            break;
-        default:
-            letter = 'D';
-    }
-    return letter;
-}
+// function getLetter(s) {
+//     let letter;
+//     // Write your code here
+//     switch(true) {
+//         case 'aeiou'.includes(s[0]):
+//             letter = 'A';
+//             break;
+//         case 'bcdfg'.includes(s[0]):
+//             letter = 'B';
+//             break;
+//         case 'hjklm'.includes(s[0]):
+//             letter = 'C';
+//             break;
+//         default:
+//             letter = 'D';
+//     }
+//     return letter;
+// }
 
-/**
-*   Return the second largest number in the array.
-*   @param {Number[]} nums - An array of numbers.
-*   @return {Number} The second largest number in the array.
-**/
+// /**
+// *   Return the second largest number in the array.
+// *   @param {Number[]} nums - An array of numbers.
+// *   @return {Number} The second largest number in the array.
+// **/
 
-function getSecondLargest(nums) {
-    // Complete the function
-    let largest = nums[0];
-    let secondLargest = nums[0];
+// function getSecondLargest(nums) {
+//     // Complete the function
+//     let largest = nums[0];
+//     let secondLargest = nums[0];
 
-    for (let i = 0; i < nums.length; i++) {
-        if(nums[i] > largest) {
-            secondLargest = largest;
-            largest = nums[i];
-        }
-        if ((nums[i] > secondLargest) && (nums[i] < largest)) {
-            secondLargest = nums[i];
-        }
-    }
-    return secondLargest;
-}
+//     for (let i = 0; i < nums.length; i++) {
+//         if(nums[i] > largest) {
+//             secondLargest = largest;
+//             largest = nums[i];
+//         }
+//         if ((nums[i] > secondLargest) && (nums[i] < largest)) {
+//             secondLargest = nums[i];
+//         }
+//     }
+//     return secondLargest;
+// }
 
 
 
-/*
- * Complete the reverseString function
- * Use console.log() to print to stdout.
- */
-function reverseString(s) {
-    try {
-        s = s.split('').reverse().join('');
-    } catch(error) {
-        console.log(error.message);
-    } finally {
-        console.log(s);
-    };
-};
+// /*
+//  * Complete the reverseString function
+//  * Use console.log() to print to stdout.
+//  */
+// function reverseString(s) {
+//     try {
+//         s = s.split('').reverse().join('');
+//     } catch(error) {
+//         console.log(error.message);
+//     } finally {
+//         console.log(s);
+//     };
+// };
 
-/*
- * Complete the isPositive function.
- * If 'a' is positive, return "YES".
- * If 'a' is 0, throw an Error with the message "Zero Error"
- * If 'a' is negative, throw an Error with the message "Negative Error"
- */
+// /*
+//  * Complete the isPositive function.
+//  * If 'a' is positive, return "YES".
+//  * If 'a' is 0, throw an Error with the message "Zero Error"
+//  * If 'a' is negative, throw an Error with the message "Negative Error"
+//  */
 
-function isPositive(a) {
-    if (a > 0) {
-        return 'YES';
-    } else {
-        throw(a === 0 ? new Error('Zero Error') : new Error('Negative Error'));
-    };
-};
+// function isPositive(a) {
+//     if (a > 0) {
+//         return 'YES';
+//     } else {
+//         throw(a === 0 ? new Error('Zero Error') : new Error('Negative Error'));
+//     };
+// };
 
-/*
- * Complete the Rectangle function
- */
-function Rectangle(a, b) {
-    this.length = a;
-    this.width = b;
-    this.perimeter = 2 * (a + b);
-    this.area = a * b;
-}
+// /*
+//  * Complete the Rectangle function
+//  */
+// function Rectangle(a, b) {
+//     this.length = a;
+//     this.width = b;
+//     this.perimeter = 2 * (a + b);
+//     this.area = a * b;
+// }
 
-/*
- * Return a count of the total number of objects 'o' satisfying o.x == o.y.
- * 
- * Parameter(s):
- * objects: an array of objects with integer properties 'x' and 'y'
- */
-function getCount(objects) {
-    let n = 0;
-    for(let o of objects) {
-        n += (o.x == o.y);
-    };
-    return n;
-};
+// /*
+//  * Return a count of the total number of objects 'o' satisfying o.x == o.y.
+//  * 
+//  * Parameter(s):
+//  * objects: an array of objects with integer properties 'x' and 'y'
+//  */
+// function getCount(objects) {
+//     let n = 0;
+//     for(let o of objects) {
+//         n += (o.x == o.y);
+//     };
+//     return n;
+// };
 
-/*
- * Complete the 'pageCount' function below.
- *
- * The function is expected to return an INTEGER.
- * The function accepts following parameters:
- *  1. INTEGER n
- *  2. INTEGER p
- */
+// /*
+//  * Complete the 'pageCount' function below.
+//  *
+//  * The function is expected to return an INTEGER.
+//  * The function accepts following parameters:
+//  *  1. INTEGER n
+//  *  2. INTEGER p
+//  */
 
-function pageCount(n, p) {
-    /*
-        n: number of pages in book
-        p: page number to turn to
-    */
-   let pageTurns =  Math.floor(p / 2);
-   let totalTurns = Math.floor(n / 2);
+// function pageCount(n, p) {
+//     /*
+//         n: number of pages in book
+//         p: page number to turn to
+//     */
+//    let pageTurns =  Math.floor(p / 2);
+//    let totalTurns = Math.floor(n / 2);
 
-   // Return the total number of page turns it takes to get to a page, or how many it requires if starting in back
-   return Math.min(pageTurns, totalTurns - pageTurns);
+//    // Return the total number of page turns it takes to get to a page, or how many it requires if starting in back
+//    return Math.min(pageTurns, totalTurns - pageTurns);
 
-}
+// }
 
-/*
- * Implement a Polygon class with the following properties:
- * 1. A constructor that takes an array of integer side lengths.
- * 2. A 'perimeter' method that returns the sum of the Polygon's side lengths.
- */
+// /*
+//  * Implement a Polygon class with the following properties:
+//  * 1. A constructor that takes an array of integer side lengths.
+//  * 2. A 'perimeter' method that returns the sum of the Polygon's side lengths.
+//  */
 
-class Polygon {
-    constructor(sides) {
-        this.sides = sides;
-    };
-    perimeter() {
-        return this.sides.reduce(function(a, b) {
-            return a + b;
-        });
-    };
-};
+// class Polygon {
+//     constructor(sides) {
+//         this.sides = sides;
+//     };
+//     perimeter() {
+//         return this.sides.reduce(function(a, b) {
+//             return a + b;
+//         });
+//     };
+// };
 
-const rectangle = new Polygon([10, 20, 10, 20]);
-const square = new Polygon([10, 10, 10, 10]);
-const pentagon = new Polygon([10, 20, 30, 40, 43]);
+// const rectangle = new Polygon([10, 20, 10, 20]);
+// const square = new Polygon([10, 10, 10, 10]);
+// const pentagon = new Polygon([10, 20, 30, 40, 43]);
 
-console.log(rectangle.perimeter());
-console.log(square.perimeter());
-console.log(pentagon.perimeter());
+// console.log(rectangle.perimeter());
+// console.log(square.perimeter());
+// console.log(pentagon.perimeter());
 
-class Rectangle {
-    constructor(w, h) {
-        this.w = w;
-        this.h = h;
-    }
-}
+// class Rectangle {
+//     constructor(w, h) {
+//         this.w = w;
+//         this.h = h;
+//     }
+// }
 
-/*
- *  Write code that adds an 'area' method to the Rectangle class' prototype
- */
-Rectangle.prototype.area = function() {
-    let area = this.w * this.h;
-    return area;
-};
+// /*
+//  *  Write code that adds an 'area' method to the Rectangle class' prototype
+//  */
+// Rectangle.prototype.area = function() {
+//     let area = this.w * this.h;
+//     return area;
+// };
 
-/*
- * Create a Square class that inherits from Rectangle and implement its class constructor
- */
+// /*
+//  * Create a Square class that inherits from Rectangle and implement its class constructor
+//  */
 
-class Square extends Rectangle {
-    constructor(s) {
-        super(s, s);
-        this.h = s;
-        this.w = s;
-    };
-};
+// class Square extends Rectangle {
+//     constructor(s) {
+//         super(s, s);
+//         this.h = s;
+//         this.w = s;
+//     };
+// };
 
 
 
@@ -921,3 +921,325 @@ console.log(b);
 //     };
 //     return true;
 // };
+
+// *** OBJECTS ***
+
+/*
+// *** Object-oriented Programming (OOP) ***
+const circle = {
+    radius: 1,
+    location: {
+        x: 1,
+        y: 1
+    },
+    isVisible: true,
+    draw: function() {
+        console.log('draw');
+    }
+};
+
+circle.draw(); // Draw method
+*/
+
+/*
+// *** Factory Function ***
+
+function createCircle(radius) {
+    return {
+        radius,
+        draw() {
+            console.log('draw');
+        }
+    };
+};
+
+const circle1 = createCircle(1);
+console.log(circle1);
+circle1.draw();
+
+const circle2 = createCircle(2);
+console.log(circle2);
+circle2.draw();
+
+const myCircle = createCircle(1);
+
+*/
+
+// Camel Notation: oneTwoThreeFour
+// Pascal Notation: OneTwoThreeFour - Contructor Functions Use Pascal Notation
+
+// *** Constructor Function ***
+/*
+function Circle(radius) {
+    this.radius = radius;
+    this.draw = function() {
+        console.log('draw');
+    }
+};
+
+const circle = new Circle(1);
+*/
+
+// *** Dynamic Nature of Objects ***
+/*
+const circle = {
+    radius: 1
+};
+
+circle.color = 'yellow';
+circle.draw = function() {};
+
+delete circle.color;
+delete circle.draw;
+
+console.log(circle);
+*/
+
+// *** Value vs Reference Types ***
+
+// Value (Primitive): Number, String, Bool, Symbol, undefined, null
+// Primitives are copied by their value
+
+// Reference: Object, Function, Array
+// Objects are copied by their reference
+
+/*
+// Primitive
+let x = 10;
+let y = x;
+x = 20;
+// Reference
+let x = { value: 10 };
+let y = x;
+x.value = 20;
+
+// let number = 10;
+let obj = { value: 10 };
+
+function increase(obj) {
+    obj.value++;
+};
+
+increase(obj);
+console.log(obj);
+*/
+
+// *** Enumerating Properties of an Object ***
+/*
+const circle = {
+    radius: 1,
+    draw() {
+        console.log('draw');
+    }
+};
+
+for(let key in circle) {
+    console.log(key, circle[key]);
+};
+
+for(let key of Object.keys(circle)) {
+    console.log(key);
+};
+for(let entry of Object.entries(circle)) {
+    console.log(entry);
+};
+
+if('radius' in circle) console.log('yes');
+*/
+
+// *** Cloning an Object ***
+/*
+const circle = {
+    radius: 1,
+    draw() {
+        console.log('draw');
+    }
+};
+
+const another = {};
+for(let key in circle) {
+    another[key] = circle[key];
+};
+another['radius'] = circle['radius'];
+
+const another = Object.assign({
+    color: 'yellow'
+}, circle);
+
+const another = { ...circle };
+
+another.draw();
+console.log(another);
+*/
+
+// *** Math ***
+/*
+// Math.random()
+function getRandomNum(min, max) {
+    return Math.random() * max - min + min;
+};
+console.log(Math.floor(getRandomNum(1, 100)));
+// Math.round()
+let rndNum = Math.round(1.8);
+console.log(rndNum);
+// Math.max()
+let maxNum = Math.max(1, 2, 3, 4, 5);
+console.log(maxNum);
+// Math.min()
+let minNum = Math.min(1, 2, 3, 4, 5);
+console.log(minNum);
+*/
+
+// *** String ***
+/*
+// String Primitive
+const message = 'This is my first message';
+
+
+// String Object
+const another = new String('hi');
+*/
+/*
+// *** Template Literals ***
+const name = 'Fox';
+
+const another = 
+`Hi ${name},
+
+Thank You for joining my mailing list.
+
+Regards,
+Steven`;
+*/
+
+// *** Date ***
+/*
+const now = new Date();
+const date1 = new Date('May 11 2018 09:00');
+const date2 = new Date(2022, 4, 11, 9);
+
+now.getFullYear();
+now.setFullYear(2021);
+now.toDateString();
+now.toTimeString();
+now.toISOString();
+*/
+
+// *** EXERCISE 1: ADDRESS OBJECT
+// Create address Object with: street, city, zipCode
+// Create function called showAddress(address)
+/*
+const address = {
+    street: 'Bay City Bend',
+    city: 'Austin',
+    zipCode: '78725'
+};
+
+function showAddress(address) {
+    for (let key in address) {
+        console.log(key, address[key]);
+    };
+};
+showAddress(address);
+*/
+
+// *** EXERCISE 2: FACTORY AND CONSTRUCTOR FUNCTIONS
+/*
+// Factory
+function createAddress(street, city, zipCode) {
+    return {
+        street,
+        city,
+        zipCode
+    };
+};
+const myAddress = createAddress('Bay City', 'Austin', '78725');
+console.log(myAddress);
+
+// Constructor
+function Address(street, city, zipCode) {
+    this.street = street;
+    this.city = city;
+    this.zipCode = zipCode;
+};
+const oldAddress = new Address('Mentone Drive', 'Round Rock', '78741');
+console.log(oldAddress);
+*/
+
+// *** EXERCISE 3: OBJECT EQUALITY
+/*
+function Address(street, city, zipCode) {
+    this.street = street;
+    this.city = city;
+    this.zipCode = zipCode;
+};
+
+const address1 = new Address('Mentone Drive', 'Round Rock', '78741');
+const address2 = new Address('Mentone Drive', 'Round Rock', '78741');
+const address3 = address1;
+
+// === to see if objects have same reference (all properties are equal return true)
+function areEqual(address1, address2) {
+    return address1.street === address2.street &&
+        address1.city === address2.city &&
+        address1.zipCode === address2.zipCode;
+};
+console.log(areEqual(address1, address2));
+
+// referencing same object
+function areSame(address1, address2) {
+    return address1 === address2;
+};
+console.log(areSame(address1, address2));
+console.log(areSame(address1, address3));
+*/
+
+// *** EXERCISE 4: BLOG POST OBJECT
+/*
+// Create object with: title, body, author, views, comments (author, body), isLive (true/false)
+
+const blogPost = {
+    title: 'a',
+    body: 'b',
+    author: 'c',
+    views: 1,
+    comments: [
+        { author: 'z',body: 'y' },
+        { author: 't',body: 'v' },
+    ],
+    isLive: true
+};
+console.log(blogPost);
+*/
+
+// *** EXERCISE 5: CONSTRUCTOR FUNCTIONS
+/*
+function Post(title, body, author) {
+    this.title = title;
+    this.body = body;
+    this.author = author;
+    this.views = 0;
+    this.comments = [];
+    this.isLive = false;
+};
+
+const post = new Post('a', 'b', 'c');
+console.log(post);
+*/
+
+// *** EXERCISE 6: PRICE RANGE OBJECT
+/*
+// Inexpensive($), Moderate($$), Pricey($$$)
+// Create array of objects, each object is price range object with own properties
+
+let priceRanges = [
+    { label: '$', toolTip: 'Inexpensive', minPerPerson: 0, maxPerPerson: 10 },
+    { label: '$$', toolTip: 'Moderate', minPerPerson: 11, maxPerPerson: 20 },
+    { label: '$$$', toolTip: 'Expensive', minPerPerson: 21, maxPerPerson: 50 },
+];
+
+let restaurants = [
+    { averagePerPerson: 5}
+];
+*/
+
