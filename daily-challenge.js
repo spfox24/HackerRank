@@ -1243,3 +1243,186 @@ let restaurants = [
 ];
 */
 
+// *** ARRAYS ***
+
+/*
+const numbers = [3, 4];
+
+// End
+numbers.push(5, 6);
+
+// Beginning
+numbers.unshift(1, 2);
+
+// Middle
+numbers.splice(2, 0, 'a', 'b');
+
+console.log(numbers);
+*/
+/*
+const numbers = [1, 2, 3, 1, 4];
+
+console.log(numbers.indexOf(1));
+console.log(numbers.lastIndexOf(1));
+console.log(numbers.includes(1));
+*/
+/*
+const courses = [
+    { id: 1, name: 'a' },
+    { id: 2, name: 'b' },
+];
+
+const course = courses.find(function(course) {
+    return course.name === 'a';
+});
+
+const course = courses.find(course => course.name === 'a');
+console.log(course);
+
+const courseIndex = courses.findIndex(function(course) {
+    return course.name === 'a';
+}); 
+console.log(courseIndex);
+*/
+/*
+// *** Removing Elements ***
+const numbers = [1, 2, 3, 4];
+
+// End
+// const last = numbers.pop();
+// console.log(last);
+
+// Beginning
+// const first = numbers.shift();
+// console.log(first);
+
+// Middle
+// numbers.splice(2, 2);
+// console.log(numbers);
+*/
+/*
+// *** Emptying an Array ***
+// Solution 1 ***
+// numbers = [];
+
+// Solution 2 ***
+// numbers.length = 0;
+*/
+/*
+// *** Combining and Slicing Arrays ***
+const first = [1, 2, 3];
+const second = [4, 5, 6];
+const object = [{ id: 1 }];
+
+object[0].id = 10;
+console.log(object);
+
+// Combine
+const combined = first.concat(second);
+
+// Slice
+const slice = combined.slice();
+
+console.log(combined);
+console.log(slice);
+*/
+/*
+// *** Spread Operator ***
+const first = [1, 2, 3];
+const second = [4, 5, 6];
+
+const combined = [...first, ...second];
+console.log(combined);
+
+const copy = [...combined];
+console.log(copy);
+*/
+/*
+// *** Iterating an Array ***
+const numbers = [1, 2, 3];
+
+for(let number of numbers) {
+    console.log(number);
+};
+
+numbers.forEach(function(number) {
+    console.log(number);
+});
+numbers.forEach((number, index) => console.log(number, index));
+*/
+/*
+// *** Joining Arrays ***
+const numbers = [1, 2, 3];
+const joined = numbers.join(',');
+
+console.log(joined);
+
+const message = 'This is my first message';
+const parts = message.split(' ');
+
+console.log(parts);
+
+const combined = parts.join('-');
+
+console.log(combined);
+*/
+/*
+// *** Sorting Arrays ***
+// const numbers = [2, 3, 1];
+// numbers.sort();
+
+// console.log(numbers);
+
+// numbers.reverse();
+// console.log(numbers);
+
+const courses = [
+    { id: 1, name: 'Node.js' },
+    { id: 2, name: 'javaScript' },
+];
+courses.sort(function(a, b) {
+    // a < b => -1
+    // a > b => 1
+    // a === b => 0
+    const nameA = a.name.toUpperCase();
+    const nameB = b.name.toUpperCase();
+
+    if(nameA < nameB) return -1;
+    if(nameA > nameB) return 1;
+    return 0;
+});
+
+console.log(courses);
+*/
+/*
+// *** Testing Elements of an Array ***
+const numbers = [1, -1, 2, 3];
+
+// every() = All elements match given criteria
+const allPositive = numbers.every(function(value) {
+    return value >= 0;
+});
+
+console.log(allPositive);
+// some() = Some elements match given criteria
+const atLeastOnePositive = numbers.some(function(value) {
+    return value >= 0;
+});
+
+console.log(atLeastOnePositive);
+*/
+/*
+// *** Filtering an Array ***
+const numbers = [1, -1, 2, 3];
+
+const filtered = numbers.filter(n => n >= 0);
+
+console.log(filtered);
+*/
+
+// *** Mapping an Array ***
+const numbers = [1, -1, 2, 3];
+
+const filtered = numbers.filter(n => n <= 0);
+
+console.log(filtered);
